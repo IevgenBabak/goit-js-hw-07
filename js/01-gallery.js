@@ -39,7 +39,7 @@ gallery.addEventListener("click", (e) => {
         gallery.addEventListener("keydown", onEscapeButton);
       },
       onClose: (instance) => {
-        gallery.addEventListener("keydown", onEscapeButton);
+        gallery.removeEventListener("keydown", onEscapeButton);
       },
     }
   );
